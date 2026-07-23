@@ -10,6 +10,7 @@
   --amber: #e49a3a;
   --cyan: #7bc2c7;
   --measure: 700px;
+  --page-measure: 820px;
 }
 
 * { box-sizing: border-box; }
@@ -314,7 +315,7 @@ h1, h2, h3 {
 }
 .newsletter-button { justify-self: start; }
 .page-hero {
-  width: min(var(--measure), calc(100% - 44px));
+  width: min(var(--page-measure), calc(100% - 44px));
   max-width: none;
   padding-block: 90px 66px;
 }
@@ -322,7 +323,7 @@ h1, h2, h3 {
 .page-hero p { max-width: 62ch; color: var(--muted); font-size: 20px; }
 .listing { padding-bottom: 90px; }
 .intro {
-  width: min(var(--measure), 100%);
+  width: min(var(--page-measure), 100%);
   margin: 0 auto 64px;
 }
 .article-list { border-top: 1px solid var(--ink); }
@@ -331,7 +332,7 @@ h1, h2, h3 {
 .article-list p { grid-column: 2; margin: 0; color: var(--muted); }
 .article-list .read-link { grid-column: 3; grid-row: 1; margin: 0; justify-self: end; }
 .empty-state {
-  width: min(var(--measure), 100%);
+  width: min(var(--page-measure), 100%);
   margin-inline: auto;
   padding: 46px;
   border: 1px solid var(--ink);
