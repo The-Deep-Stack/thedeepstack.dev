@@ -1,24 +1,25 @@
 ---
 title: About
-description: The Deep Stack publishes rigorous systems writing and helps engineering teams reason about performance, reliability, and correctness.
+description: The Deep Stack is an independent publication about the systems beneath modern software.
 ---
 
-The Deep Stack is an independent technical publication and advisory practice focused on the systems beneath modern software: runtimes, garbage collectors, databases, networking, operating systems, cloud infrastructure, performance, reliability, security, and practical correctness.
+The Deep Stack is an independent publication about the systems beneath modern software.
 
-Its central thesis is simple:
+Modern software rests on many layers: languages, runtimes, databases, operating systems, networks, and cloud infrastructure. These layers are designed to hide complexity. But when software becomes slow, unreliable, or difficult to explain, the hidden details matter.
 
-> AI will make code generation cheaper while making deep engineering judgment more valuable.
+The Deep Stack follows those details far enough to answer three questions:
 
-As implementation becomes easier to produce, teams still need engineers who can explain system behaviour, verify important properties, diagnose performance problems, and make architectural decisions under real production constraints.
+- What is the system doing?
+- Why does it behave that way?
+- What does that mean for an engineer using it?
 
-## What The Deep Stack does
+## What we publish
 
-The initial focus is deliberately narrow:
+The initial focus is long-form technical writing about:
 
-- deep technical writing and reproducible investigations,
-- a concise email dispatch for new work,
-- focused performance and correctness advisory work,
-- production-readiness assessments,
-- and practical workshops for engineering teams.
+- runtimes, memory management, scheduling, compilation, and concurrency,
+- database internals, transactions, replication, and recovery,
+- distributed workflows, state, consistency, and failure,
+- and production performance, reliability, observability, capacity, and cost.
 
-The aim is to help experienced engineers understand difficult systems, test assumptions with evidence, and make better decisions in production.
+Articles use measurements, experiments, source code, documentation, and research where appropriate. They are written for software engineers across disciplines—and for anyone who wants a deeper understanding of how software works.

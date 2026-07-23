@@ -9,6 +9,4 @@ You remain responsible for evaluating technical information before applying it t
 
 Unless stated otherwise, website content may not be republished commercially or presented as another person’s work. Short quotations and links are welcome with appropriate attribution.
 
-Advisory and training engagements are governed by separately agreed terms covering scope, responsibilities, confidentiality, fees, and deliverables.
-
 Questions can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.

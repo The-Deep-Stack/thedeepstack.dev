@@ -1,5 +1,4 @@
 ---
 title: The Deep Stack
-description: Systems engineering beneath the abstractions.
+description: An independent publication about how software works beneath the surface.
 ---
-

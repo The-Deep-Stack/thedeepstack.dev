@@ -1,14 +1,14 @@
 ---
-title: The Deep Stack Dispatch
-description: Publication updates and occasional systems-engineering notes.
+title: Publication updates
+description: Get notified when The Deep Stack publishes a new article.
 ---
 
-The Dispatch will announce new investigations and share occasional field notes, useful models, benchmark observations, and practical systems-engineering frameworks.
+The email list will announce new articles from The Deep Stack.
 
-It is for engineers who want to understand what happens below the convenient abstraction—and for technical leaders responsible for the consequences.
+Expect occasional updates about runtimes, databases, distributed systems, performance, and reliability. There will be no fixed schedule and no filler.
 
-## Subscription opening soon
+## Email list opening soon
 
-Email subscriptions are not open yet. When they open, articles will remain canonical on this website; the Dispatch will bring readers back to the original publication rather than duplicate it on another platform.
+Email subscriptions are not open yet. When they open, every article will remain available on this website. Emails will link back to the original article rather than duplicate it on another platform.
 
-Until then, you can [contact The Deep Stack]({{% relref "/contact" %}}) directly.
+Until then, questions can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.

@@ -33,7 +33,7 @@ caches:
     dir: :cacheDir/images
 
 params:
-  description: Deep technical writing, performance engineering, correctness reviews, and production architecture.
+  description: Carefully researched writing about runtimes, databases, distributed systems, and production engineering.
   author: Rohit Jha
   contactEmail: hello@thedeepstack.dev
   kitFormAction: ""
@@ -48,15 +48,9 @@ menus:
     - name: Writing
       pageRef: /writing
       weight: 10
-    - name: Advisory
-      pageRef: /advisory
-      weight: 20
-    - name: Workshops
-      pageRef: /workshops
-      weight: 30
     - name: About
       pageRef: /about
-      weight: 40
+      weight: 20
     - name: Subscribe
       pageRef: /newsletter
-      weight: 50
+      weight: 30
