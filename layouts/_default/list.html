@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <header class="page-hero shell">
+    <div class="section-kicker">{{ .Type | default "The Deep Stack" }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <section class="shell listing">
+    {{ if .Content }}<div class="prose intro">{{ .Content }}</div>{{ end }}
+    <div class="article-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <article>
+          <div class="meta">{{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} min read</div>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Description | default .Summary }}</p>
+          <a class="read-link" href="{{ .RelPermalink }}">Read →</a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+

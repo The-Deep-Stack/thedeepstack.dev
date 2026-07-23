@@ -1,0 +1,97 @@
+{{ define "main" }}
+  <div class="shell hero-wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Systems engineering for an AI-accelerated world</div>
+        <h1>Understand the systems beneath your software.</h1>
+        <p class="subhead">Deep technical writing, performance engineering, correctness reviews, and production architecture for teams building under real-world constraints.</p>
+        <div class="actions">
+          <a class="button primary" href="/writing/">Explore the writing</a>
+          <a class="button secondary" href="/contact/">Discuss an engineering problem</a>
+        </div>
+      </div>
+      <aside class="console" aria-label="Example systems instrumentation">
+        <div class="console-head">
+          <span>Field note / 001</span>
+          <span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="trace" aria-hidden="true">
+          <span class="trace-segment one"></span>
+          <span class="trace-segment two"></span>
+          <span class="trace-segment three"></span>
+          <span class="trace-segment four"></span>
+          <span class="trace-segment five"></span>
+        </div>
+        <div class="readout">
+          <div><span>latency.p99</span><b>184.2ms</b></div>
+          <div><span>invariant.check</span><b class="ok">PASS</b></div>
+          <div><span>failure.surface</span><b>mapped</b></div>
+        </div>
+        <div class="ticker">Observe → Reason → Verify</div>
+      </aside>
+    </section>
+  </div>
+
+  <section class="shell section">
+    <div class="section-grid">
+      <header>
+        <div class="section-kicker">Areas of practice</div>
+        <h2>Engineering judgment, applied.</h2>
+      </header>
+      <div class="practice-grid">
+        <article class="practice"><span class="num">01 /</span><h3>Performance</h3><p>Find the real constraint through measurement, profiling, and experiments—not intuition alone.</p></article>
+        <article class="practice"><span class="num">02 /</span><h3>Correctness</h3><p>Make invariants explicit and expose failure modes before they become production incidents.</p></article>
+        <article class="practice"><span class="num">03 /</span><h3>Reliability</h3><p>Design graceful degradation and operating practices for systems under real pressure.</p></article>
+        <article class="practice"><span class="num">04 /</span><h3>Architecture</h3><p>Choose boundaries and tradeoffs that stay legible as products, teams, and workloads evolve.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell section">
+    <div class="section-grid">
+      <header>
+        <div class="section-kicker">Featured investigation</div>
+        <h2>Notes from below the abstraction line.</h2>
+      </header>
+      {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
+      {{ range $featured }}
+        <article class="feature">
+          <div class="feature-copy">
+            <div class="meta">{{ with .Params.series }}{{ . }} · {{ end }}{{ .ReadingTime }} min read · {{ with index .Params.topics 0 }}{{ . }}{{ end }}</div>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Description }}</p>
+            <a class="read-link" href="{{ .RelPermalink }}">Read the investigation →</a>
+          </div>
+          <div class="feature-panel" aria-label="Value migration model">
+            <div class="panel-label">Value migration / model</div>
+            <div class="stack-map">
+              <div class="stack-row">Code generation <span>↑ supply</span></div>
+              <div class="stack-row">System comprehension <span>↑ need</span></div>
+              <div class="stack-row active">Engineering judgment <span>↑ value</span></div>
+            </div>
+            <div class="panel-label">Thesis status: active</div>
+          </div>
+        </article>
+      {{ else }}
+        <p>The first investigation is in progress.</p>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="shell section services-preview">
+    <div class="section-grid">
+      <header>
+        <div class="section-kicker">Work with The Deep Stack</div>
+        <h2>Clarity for consequential systems.</h2>
+      </header>
+      <div class="service-list">
+        <a href="/advisory/"><span>01</span><strong>Performance and correctness reviews</strong><em>Explore advisory →</em></a>
+        <a href="/advisory/"><span>02</span><strong>Production readiness assessments</strong><em>Explore advisory →</em></a>
+        <a href="/workshops/"><span>03</span><strong>Practical systems workshops</strong><em>Explore workshops →</em></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell">{{ partial "subscribe.html" . }}</div>
+{{ end }}
+
