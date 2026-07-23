@@ -11,7 +11,6 @@
       <button type="submit">Subscribe →</button>
     </form>
   {{ else }}
-    <a class="button primary newsletter-button" href="/newsletter/">Join the dispatch →</a>
+    <a class="button primary newsletter-button" href="{{ "newsletter/" | relURL }}">Join the dispatch →</a>
   {{ end }}
 </section>
-

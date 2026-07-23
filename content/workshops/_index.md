@@ -15,5 +15,4 @@ Workshops combine mechanisms, production examples, guided investigation, and exe
 
 Private workshops can be adapted to the runtime, data model, and operational concerns of a specific engineering organization.
 
-[Discuss a workshop](/contact/)
-
+[Discuss a workshop]({{% relref "/contact" %}})

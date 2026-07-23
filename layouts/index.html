@@ -6,8 +6,8 @@
         <h1>Understand the systems beneath your software.</h1>
         <p class="subhead">Deep technical writing, performance engineering, correctness reviews, and production architecture for teams building under real-world constraints.</p>
         <div class="actions">
-          <a class="button primary" href="/writing/">Explore the writing</a>
-          <a class="button secondary" href="/contact/">Discuss an engineering problem</a>
+          <a class="button primary" href="{{ "writing/" | relURL }}">Explore the writing</a>
+          <a class="button secondary" href="{{ "contact/" | relURL }}">Discuss an engineering problem</a>
         </div>
       </div>
       <aside class="console" aria-label="Example systems instrumentation">
@@ -85,13 +85,12 @@
         <h2>Clarity for consequential systems.</h2>
       </header>
       <div class="service-list">
-        <a href="/advisory/"><span>01</span><strong>Performance and correctness reviews</strong><em>Explore advisory →</em></a>
-        <a href="/advisory/"><span>02</span><strong>Production readiness assessments</strong><em>Explore advisory →</em></a>
-        <a href="/workshops/"><span>03</span><strong>Practical systems workshops</strong><em>Explore workshops →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>01</span><strong>Performance and correctness reviews</strong><em>Explore advisory →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>02</span><strong>Production readiness assessments</strong><em>Explore advisory →</em></a>
+        <a href="{{ "workshops/" | relURL }}"><span>03</span><strong>Practical systems workshops</strong><em>Explore workshops →</em></a>
       </div>
     </div>
   </section>
 
   <div class="shell">{{ partial "subscribe.html" . }}</div>
 {{ end }}
-

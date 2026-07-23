@@ -2,9 +2,8 @@
   <span>© {{ now.Year }} The Deep Stack</span>
   <span class="mono">Built for depth, not velocity.</span>
   <nav aria-label="Footer navigation">
-    <a href="/privacy/">Privacy</a>
-    <a href="/terms/">Terms</a>
-    <a href="/index.xml">RSS</a>
+    <a href="{{ "privacy/" | relURL }}">Privacy</a>
+    <a href="{{ "terms/" | relURL }}">Terms</a>
+    <a href="{{ "index.xml" | relURL }}">RSS</a>
   </nav>
 </footer>
-

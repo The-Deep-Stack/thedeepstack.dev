@@ -21,5 +21,4 @@ Architecture, observability, degradation, capacity, data integrity, and operatio
 
 Most work begins with a focused assessment. The output is a prioritized technical report, an evidence trail, and a working session with the engineering team—not a generic checklist.
 
-[Discuss an engineering problem](/contact/)
-
+[Discuss an engineering problem]({{% relref "/contact" %}})
