@@ -61,16 +61,16 @@
             <div class="meta">{{ with .Params.series }}{{ . }} · {{ end }}{{ .ReadingTime }} min read · {{ with index .Params.topics 0 }}{{ . }}{{ end }}</div>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             <p>{{ .Description }}</p>
-            <a class="read-link" href="{{ .RelPermalink }}">Read the investigation →</a>
+            <a class="read-link" href="{{ .RelPermalink }}">Read the article →</a>
           </div>
-          <div class="feature-panel" aria-label="Value migration model">
-            <div class="panel-label">Value migration / model</div>
+          <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
+            <div class="panel-label">Our approach</div>
             <div class="stack-map">
-              <div class="stack-row">Code generation <span>↑ supply</span></div>
-              <div class="stack-row">System comprehension <span>↑ need</span></div>
-              <div class="stack-row active">Engineering judgment <span>↑ value</span></div>
+              <div class="stack-row">Measure behaviour <span>Evidence</span></div>
+              <div class="stack-row">Explain the cause <span>Model</span></div>
+              <div class="stack-row active">Apply the lesson <span>Practice</span></div>
             </div>
-            <div class="panel-label">Thesis status: active</div>
+            <div class="panel-label">Written for working engineers</div>
           </div>
         </article>
       {{ else }}
@@ -81,14 +81,14 @@
             <p>Our first articles will cover runtime behaviour, database internals, distributed workflows, and performance debugging through measurements, experiments, and source code.</p>
             <a class="read-link" href="{{ "writing/" | relURL }}">See what we will cover →</a>
           </div>
-          <div class="feature-panel" aria-label="Publishing model">
-            <div class="panel-label">Investigation / method</div>
+          <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
+            <div class="panel-label">Our approach</div>
             <div class="stack-map">
-              <div class="stack-row">Observe behaviour <span>Evidence</span></div>
-              <div class="stack-row">Explain mechanism <span>Model</span></div>
-              <div class="stack-row active">Verify the claim <span>Judgment</span></div>
+              <div class="stack-row">Measure behaviour <span>Evidence</span></div>
+              <div class="stack-row">Explain the cause <span>Model</span></div>
+              <div class="stack-row active">Apply the lesson <span>Practice</span></div>
             </div>
-            <div class="panel-label">Publication status: preparing</div>
+            <div class="panel-label">Written for working engineers</div>
           </div>
         </article>
       {{ end }}
