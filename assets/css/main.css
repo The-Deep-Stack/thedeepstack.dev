@@ -304,6 +304,14 @@ h1, h2, h3 {
 .article-list h2 { margin: 0; font-size: 28px; line-height: 1.2; }
 .article-list p { grid-column: 2; margin: 0; color: var(--muted); }
 .article-list .read-link { grid-column: 3; grid-row: 1; margin: 0; justify-self: end; }
+.empty-state {
+  max-width: 850px;
+  padding: 46px;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+.empty-state h2 { margin: 14px 0 12px; font-size: 36px; }
+.empty-state p { max-width: 680px; margin: 0 0 26px; color: var(--muted); }
 .article-header { padding-block: 90px 52px; border-bottom: 1px solid var(--line); }
 .article-header h1 { margin: 15px 0 18px; font-size: clamp(3rem, 6vw, 4.8rem); line-height: 1.05; }
 .dek { color: var(--muted); font-family: Georgia, "Times New Roman", serif; font-size: 21px; line-height: 1.55; }
@@ -363,4 +371,3 @@ h1, h2, h3 {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
-

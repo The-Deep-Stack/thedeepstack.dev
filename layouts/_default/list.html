@@ -6,16 +6,24 @@
   </header>
   <section class="shell listing">
     {{ if .Content }}<div class="prose intro">{{ .Content }}</div>{{ end }}
-    <div class="article-list">
-      {{ range .Pages.ByDate.Reverse }}
-        <article>
-          <div class="meta">{{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} min read</div>
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <p>{{ .Description | default .Summary }}</p>
-          <a class="read-link" href="{{ .RelPermalink }}">Read →</a>
-        </article>
-      {{ end }}
-    </div>
+    {{ if .Pages }}
+      <div class="article-list">
+        {{ range .Pages.ByDate.Reverse }}
+          <article>
+            <div class="meta">{{ .Date.Format "02 Jan 2006" }} · {{ .ReadingTime }} min read</div>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Description | default .Summary }}</p>
+            <a class="read-link" href="{{ .RelPermalink }}">Read →</a>
+          </article>
+        {{ end }}
+      </div>
+    {{ else if eq .Section "writing" }}
+      <aside class="empty-state">
+        <div class="section-kicker">Publication status</div>
+        <h2>The first investigations are being prepared.</h2>
+        <p>No articles have been published yet. The work begins with careful, evidence-led pieces designed to remain useful after the news cycle moves on.</p>
+        <a class="button primary" href="{{ "newsletter/" | relURL }}">Get publication updates</a>
+      </aside>
+    {{ end }}
   </section>
 {{ end }}
-

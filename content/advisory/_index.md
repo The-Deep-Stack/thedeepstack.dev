@@ -3,22 +3,35 @@ title: Advisory
 description: Focused technical reviews for teams facing performance, correctness, reliability, and architectural risk.
 ---
 
-The Deep Stack helps engineering teams investigate consequential system behavior, make risk visible, and turn ambiguous production concerns into concrete decisions.
+The Deep Stack helps engineering teams investigate consequential system behaviour, make technical risk visible, and turn ambiguous production concerns into concrete decisions.
 
-## Performance engineering
+## Performance investigations
 
-Backend latency investigations, runtime and garbage-collection analysis, database bottleneck reviews, load-test design, and cloud cost-performance assessments.
+For systems that are slow, expensive, unstable under load, or approaching a capacity boundary.
 
-## Correctness engineering
+Typical work includes request-path analysis, runtime and garbage-collection behaviour, database bottlenecks, load-test design, capacity modelling, and cloud cost-performance trade-offs.
 
-Critical workflow reviews for payments, bookings, inventory, queues, retries, and distributed state. The work may include invariant discovery, state-machine modeling, property-based testing, or lightweight formal methods.
+## Correctness reviews
 
-## Production readiness
+For workflows where an apparently small defect can create financial, operational, or data-integrity consequences.
 
-Architecture, observability, degradation, capacity, data integrity, and operational-risk assessments for teams preparing for launch, migration, or scale.
+Reviews focus on payments, bookings, inventory, queues, retries, reconciliation, and distributed state. Depending on the problem, the work may include invariant discovery, state-machine modelling, property-based testing, or lightweight formal methods.
 
-## Engagement model
+## Production-readiness assessments
 
-Most work begins with a focused assessment. The output is a prioritized technical report, an evidence trail, and a working session with the engineering team—not a generic checklist.
+For teams preparing for an important launch, migration, architectural change, or increase in scale.
+
+The assessment covers system boundaries, capacity, observability, failure containment, recovery, data integrity, operational procedures, and unresolved architectural risk.
+
+## What an engagement produces
+
+Most work begins with a focused assessment rather than an open-ended consulting commitment. Deliverables typically include:
+
+- a written account of the system and the evidence examined,
+- identified constraints, failure modes, and uncertain assumptions,
+- prioritised recommendations with explicit trade-offs,
+- and a working session with the engineering team.
+
+The purpose is not to deliver a generic checklist. It is to leave the team with a clearer model of its system and better decisions.
 
 [Discuss an engineering problem]({{% relref "/contact" %}})

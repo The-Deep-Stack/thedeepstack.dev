@@ -50,8 +50,8 @@
   <section class="shell section">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Featured investigation</div>
-        <h2>Notes from below the abstraction line.</h2>
+        <div class="section-kicker">Publishing programme</div>
+        <h2>Follow the system past the convenient explanation.</h2>
       </header>
       {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
       {{ range $featured }}
@@ -73,7 +73,23 @@
           </div>
         </article>
       {{ else }}
-        <p>The first investigation is in progress.</p>
+        <article class="feature">
+          <div class="feature-copy">
+            <div class="meta">The publication is in preparation</div>
+            <h3>Deep technical investigations are coming.</h3>
+            <p>The first series will examine runtime behaviour, database mechanics, distributed workflows, production performance, and the engineering discipline required to verify AI-generated software.</p>
+            <a class="read-link" href="{{ "writing/" | relURL }}">View the research agenda →</a>
+          </div>
+          <div class="feature-panel" aria-label="Publishing model">
+            <div class="panel-label">Investigation / method</div>
+            <div class="stack-map">
+              <div class="stack-row">Observe behaviour <span>Evidence</span></div>
+              <div class="stack-row">Explain mechanism <span>Model</span></div>
+              <div class="stack-row active">Verify the claim <span>Judgment</span></div>
+            </div>
+            <div class="panel-label">Publication status: preparing</div>
+          </div>
+        </article>
       {{ end }}
     </div>
   </section>
