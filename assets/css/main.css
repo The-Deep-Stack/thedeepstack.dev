@@ -9,7 +9,7 @@
   --line: #c9c4b8;
   --amber: #e49a3a;
   --cyan: #7bc2c7;
-  --measure: 760px;
+  --measure: 700px;
 }
 
 * { box-sizing: border-box; }
@@ -313,18 +313,26 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 .newsletter-button { justify-self: start; }
-.page-hero { max-width: 1000px; padding-block: 90px 66px; }
+.page-hero {
+  width: min(var(--measure), calc(100% - 44px));
+  max-width: none;
+  padding-block: 90px 66px;
+}
 .page-hero h1 { max-width: 880px; font-size: clamp(3rem, 6vw, 5.2rem); }
 .page-hero p { max-width: 62ch; color: var(--muted); font-size: 20px; }
 .listing { padding-bottom: 90px; }
-.intro { margin: 0 0 64px; }
+.intro {
+  width: min(var(--measure), 100%);
+  margin: 0 auto 64px;
+}
 .article-list { border-top: 1px solid var(--ink); }
 .article-list article { display: grid; grid-template-columns: 165px 1fr 120px; gap: 28px; align-items: start; padding: 30px 0; border-bottom: 1px solid var(--line); }
 .article-list h2 { margin: 0; font-size: 28px; line-height: 1.2; }
 .article-list p { grid-column: 2; margin: 0; color: var(--muted); }
 .article-list .read-link { grid-column: 3; grid-row: 1; margin: 0; justify-self: end; }
 .empty-state {
-  max-width: 850px;
+  width: min(var(--measure), 100%);
+  margin-inline: auto;
   padding: 46px;
   border: 1px solid var(--ink);
   background: var(--white);
