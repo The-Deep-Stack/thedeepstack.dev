@@ -1,6 +1,7 @@
 ---
 title: Workshops
 description: Practical systems workshops designed around real engineering decisions.
+draft: true
 ---
 
 The Deep Stack workshops are designed for engineers who want to reason more clearly about production behaviour—not memorise another collection of architecture patterns.

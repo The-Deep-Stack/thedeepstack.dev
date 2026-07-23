@@ -1,19 +1,18 @@
 ---
 title: Writing
-description: Deep investigations into runtimes, databases, distributed workflows, performance, reliability, and correctness.
+description: Carefully researched articles about the systems beneath modern software.
 ---
 
-The abstractions are useful—until they leak.
+Software abstractions are useful. Understanding what sits beneath them is useful too.
 
-The Deep Stack will publish long-form, evidence-led investigations that follow software far enough down the stack to explain what it is really doing, why it behaves that way, and what the mechanism means in production.
+The Deep Stack will publish detailed articles that explain how software works, why it behaves as it does, and what that means in practice.
 
-## Initial research agenda
+## Initial topics
 
 - Runtime behaviour: garbage collection, allocation, scheduling, JIT compilation, and concurrency.
 - Database mechanics: indexes, query planning, locking, transactions, replication, and failure recovery.
 - Distributed workflows: retries, queues, idempotency, state transitions, consistency, and invariant design.
 - Performance engineering: measurement, profiling, benchmarking, load generation, capacity, and cost.
 - Reliability: degradation, overload, observability, incident analysis, and operational feedback.
-- AI-assisted engineering: verification, review discipline, architectural reasoning, and practical correctness.
 
-The aim is not to keep pace with a news cycle. It is to produce explanations, experiments, and working models that remain useful.
+Each article will use the evidence the subject requires: measurements, experiments, source code, documentation, and research. The aim is to create technical references that remain useful.
