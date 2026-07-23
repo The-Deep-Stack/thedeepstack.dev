@@ -2,31 +2,31 @@
   <div class="shell hero-wrap">
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">Technical publication &amp; engineering advisory</div>
-        <h1>Understand and improve production software.</h1>
-        <p class="subhead">The Deep Stack explains how runtimes, databases, networks, and distributed systems behave—and helps engineering teams solve difficult performance, reliability, and correctness problems.</p>
+        <div class="eyebrow">For backend, platform &amp; infrastructure engineers</div>
+        <h1>Understand the systems your software depends on.</h1>
+        <p class="subhead">The Deep Stack is an independent publication and consulting practice. We publish in-depth articles, help teams solve difficult production problems, and run practical engineering workshops.</p>
         <div class="actions">
-          <a class="button primary" href="{{ "writing/" | relURL }}">Read the publication</a>
-          <a class="button secondary" href="{{ "advisory/" | relURL }}">Get engineering help</a>
+          <a class="button primary" href="{{ "writing/" | relURL }}">Read our articles</a>
+          <a class="button secondary" href="{{ "advisory/" | relURL }}">Work with us</a>
         </div>
       </div>
       <aside class="console offering-summary" aria-label="What The Deep Stack offers">
         <div class="console-head">
-          <span>What you will find here</span>
+          <span>What The Deep Stack does</span>
           <span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span>
         </div>
         <div class="offering-list">
           <div>
             <span>01</span>
-            <p><strong>Technical writing</strong>Clear explanations and evidence-led investigations of systems beneath the application layer.</p>
+            <p><strong>Learn</strong>Read clear, detailed explanations of runtimes, databases, networking, distributed systems, and cloud infrastructure.</p>
           </div>
           <div>
             <span>02</span>
-            <p><strong>Engineering advisory</strong>Independent help diagnosing performance, reliability, correctness, and architecture problems.</p>
+            <p><strong>Solve</strong>Get independent help with a performance bottleneck, reliability risk, correctness issue, or architecture decision.</p>
           </div>
           <div>
             <span>03</span>
-            <p><strong>Team workshops</strong>Practical sessions that build stronger systems reasoning and production problem-solving skills.</p>
+            <p><strong>Train</strong>Give your engineering team practical methods for investigating and reasoning about production systems.</p>
           </div>
         </div>
       </aside>
@@ -36,14 +36,14 @@
   <section class="shell section">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Problems we work on</div>
-        <h2>From symptoms to root causes.</h2>
+        <div class="section-kicker">What we focus on</div>
+        <h2>The hard parts of production engineering.</h2>
       </header>
       <div class="practice-grid">
-        <article class="practice"><span class="num">01 /</span><h3>Performance</h3><p>Measure where time and resources go, isolate the real constraint, and test improvements under representative load.</p></article>
-        <article class="practice"><span class="num">02 /</span><h3>Correctness</h3><p>State the invariants that matter, challenge hidden assumptions, and make failure modes visible before production does.</p></article>
-        <article class="practice"><span class="num">03 /</span><h3>Reliability</h3><p>Understand how systems degrade, contain failure, and recover when dependencies and operating conditions change.</p></article>
-        <article class="practice"><span class="num">04 /</span><h3>Architecture</h3><p>Make consequential trade-offs explicit and choose boundaries that remain understandable as the system evolves.</p></article>
+        <article class="practice"><span class="num">01 /</span><h3>Performance</h3><p>Find why a system is slow, where resources are going, and which change will make a measurable difference.</p></article>
+        <article class="practice"><span class="num">02 /</span><h3>Correctness</h3><p>Identify the assumptions and failure cases that can cause incorrect data, behaviour, or outcomes.</p></article>
+        <article class="practice"><span class="num">03 /</span><h3>Reliability</h3><p>Prepare systems to handle dependency failures, traffic changes, and unexpected operating conditions.</p></article>
+        <article class="practice"><span class="num">04 /</span><h3>Architecture</h3><p>Make sound technical trade-offs and keep system boundaries understandable as software evolves.</p></article>
       </div>
     </div>
   </section>
@@ -51,8 +51,8 @@
   <section class="shell section">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Field notes &amp; investigations</div>
-        <h2>Explanations that survive contact with production.</h2>
+        <div class="section-kicker">The publication</div>
+        <h2>Detailed explanations for working engineers.</h2>
       </header>
       {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
       {{ range $featured }}
@@ -76,10 +76,10 @@
       {{ else }}
         <article class="feature">
           <div class="feature-copy">
-            <div class="meta">The publication is in preparation</div>
-            <h3>Deep technical investigations are coming.</h3>
-            <p>The first investigations will examine runtime behaviour, database mechanics, distributed workflows, and production performance—using measurements, experiments, and source-level reasoning.</p>
-            <a class="read-link" href="{{ "writing/" | relURL }}">View the research agenda →</a>
+            <div class="meta">The first articles are in preparation</div>
+            <h3>Go beyond surface-level explanations.</h3>
+            <p>Our first articles will cover runtime behaviour, database internals, distributed workflows, and performance debugging through measurements, experiments, and source code.</p>
+            <a class="read-link" href="{{ "writing/" | relURL }}">See what we will cover →</a>
           </div>
           <div class="feature-panel" aria-label="Publishing model">
             <div class="panel-label">Investigation / method</div>
@@ -98,13 +98,13 @@
   <section class="shell section services-preview">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Work with The Deep Stack</div>
-        <h2>An independent perspective on difficult systems.</h2>
+        <div class="section-kicker">Consulting &amp; workshops</div>
+        <h2>Bring us a difficult engineering problem.</h2>
       </header>
       <div class="service-list">
-        <a href="{{ "advisory/" | relURL }}"><span>01</span><strong>Diagnose a performance or correctness problem</strong><em>Explore advisory →</em></a>
-        <a href="{{ "advisory/" | relURL }}"><span>02</span><strong>Review a system before a consequential launch</strong><em>Explore advisory →</em></a>
-        <a href="{{ "workshops/" | relURL }}"><span>03</span><strong>Build practical systems judgment within your team</strong><em>Explore workshops →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>01</span><strong>Diagnose a performance or correctness problem</strong><em>View consulting →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>02</span><strong>Review a system before an important launch</strong><em>View consulting →</em></a>
+        <a href="{{ "workshops/" | relURL }}"><span>03</span><strong>Teach your team how to investigate production systems</strong><em>View workshops →</em></a>
       </div>
     </div>
   </section>
