@@ -2,32 +2,30 @@
   <div class="shell hero-wrap">
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">Systems engineering for an AI-accelerated world</div>
-        <h1>Understand the systems beneath your software.</h1>
-        <p class="subhead">Deep technical writing, performance engineering, correctness reviews, and production architecture for teams building under real-world constraints.</p>
+        <div class="eyebrow">Independent systems engineering</div>
+        <h1>See what your systems are really doing.</h1>
+        <p class="subhead">Rigorous technical writing and hands-on engineering for software that must remain fast, reliable, and correct under real production conditions.</p>
         <div class="actions">
-          <a class="button primary" href="{{ "writing/" | relURL }}">Explore the writing</a>
-          <a class="button secondary" href="{{ "contact/" | relURL }}">Discuss an engineering problem</a>
+          <a class="button primary" href="{{ "writing/" | relURL }}">Explore the field notes</a>
+          <a class="button secondary" href="{{ "contact/" | relURL }}">Bring us a hard problem</a>
         </div>
       </div>
-      <aside class="console" aria-label="Example systems instrumentation">
+      <aside class="console" aria-label="A systems engineering model">
         <div class="console-head">
-          <span>Field note / 001</span>
+          <span>System map / 001</span>
           <span class="console-lights" aria-hidden="true"><i></i><i></i><i></i></span>
         </div>
-        <div class="trace" aria-hidden="true">
-          <span class="trace-segment one"></span>
-          <span class="trace-segment two"></span>
-          <span class="trace-segment three"></span>
-          <span class="trace-segment four"></span>
-          <span class="trace-segment five"></span>
+        <div class="system-map">
+          <div><span>04</span><strong>Operations &amp; failure</strong><em>Observe</em></div>
+          <div><span>03</span><strong>Network &amp; coordination</strong><em>Trace</em></div>
+          <div><span>02</span><strong>Data &amp; state</strong><em>Verify</em></div>
+          <div class="active"><span>01</span><strong>Runtime behaviour</strong><em>Explain</em></div>
         </div>
         <div class="readout">
-          <div><span>latency.p99</span><b>184.2ms</b></div>
-          <div><span>invariant.check</span><b class="ok">PASS</b></div>
-          <div><span>failure.surface</span><b>mapped</b></div>
+          <div><span>question</span><b>What changed?</b></div>
+          <div><span>method</span><b class="ok">Evidence first</b></div>
         </div>
-        <div class="ticker">Observe → Reason → Verify</div>
+        <div class="ticker">Measure → Explain → Improve</div>
       </aside>
     </section>
   </div>
@@ -35,14 +33,14 @@
   <section class="shell section">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Areas of practice</div>
-        <h2>Engineering judgment, applied.</h2>
+        <div class="section-kicker">Core disciplines</div>
+        <h2>Work from evidence, not folklore.</h2>
       </header>
       <div class="practice-grid">
-        <article class="practice"><span class="num">01 /</span><h3>Performance</h3><p>Find the real constraint through measurement, profiling, and experiments—not intuition alone.</p></article>
-        <article class="practice"><span class="num">02 /</span><h3>Correctness</h3><p>Make invariants explicit and expose failure modes before they become production incidents.</p></article>
-        <article class="practice"><span class="num">03 /</span><h3>Reliability</h3><p>Design graceful degradation and operating practices for systems under real pressure.</p></article>
-        <article class="practice"><span class="num">04 /</span><h3>Architecture</h3><p>Choose boundaries and tradeoffs that stay legible as products, teams, and workloads evolve.</p></article>
+        <article class="practice"><span class="num">01 /</span><h3>Performance</h3><p>Measure where time and resources go, isolate the real constraint, and test improvements under representative load.</p></article>
+        <article class="practice"><span class="num">02 /</span><h3>Correctness</h3><p>State the invariants that matter, challenge hidden assumptions, and make failure modes visible before production does.</p></article>
+        <article class="practice"><span class="num">03 /</span><h3>Reliability</h3><p>Understand how systems degrade, contain failure, and recover when dependencies and operating conditions change.</p></article>
+        <article class="practice"><span class="num">04 /</span><h3>Architecture</h3><p>Make consequential trade-offs explicit and choose boundaries that remain understandable as the system evolves.</p></article>
       </div>
     </div>
   </section>
@@ -50,8 +48,8 @@
   <section class="shell section">
     <div class="section-grid">
       <header>
-        <div class="section-kicker">Publishing programme</div>
-        <h2>Follow the system past the convenient explanation.</h2>
+        <div class="section-kicker">Field notes &amp; investigations</div>
+        <h2>Explanations that survive contact with production.</h2>
       </header>
       {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
       {{ range $featured }}
@@ -77,7 +75,7 @@
           <div class="feature-copy">
             <div class="meta">The publication is in preparation</div>
             <h3>Deep technical investigations are coming.</h3>
-            <p>The first series will examine runtime behaviour, database mechanics, distributed workflows, production performance, and the engineering discipline required to verify AI-generated software.</p>
+            <p>The first investigations will examine runtime behaviour, database mechanics, distributed workflows, and production performance—using measurements, experiments, and source-level reasoning.</p>
             <a class="read-link" href="{{ "writing/" | relURL }}">View the research agenda →</a>
           </div>
           <div class="feature-panel" aria-label="Publishing model">
@@ -98,12 +96,12 @@
     <div class="section-grid">
       <header>
         <div class="section-kicker">Work with The Deep Stack</div>
-        <h2>Clarity for consequential systems.</h2>
+        <h2>An independent perspective on difficult systems.</h2>
       </header>
       <div class="service-list">
-        <a href="{{ "advisory/" | relURL }}"><span>01</span><strong>Performance and correctness reviews</strong><em>Explore advisory →</em></a>
-        <a href="{{ "advisory/" | relURL }}"><span>02</span><strong>Production readiness assessments</strong><em>Explore advisory →</em></a>
-        <a href="{{ "workshops/" | relURL }}"><span>03</span><strong>Practical systems workshops</strong><em>Explore workshops →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>01</span><strong>Diagnose a performance or correctness problem</strong><em>Explore advisory →</em></a>
+        <a href="{{ "advisory/" | relURL }}"><span>02</span><strong>Review a system before a consequential launch</strong><em>Explore advisory →</em></a>
+        <a href="{{ "workshops/" | relURL }}"><span>03</span><strong>Build practical systems judgment within your team</strong><em>Explore workshops →</em></a>
       </div>
     </div>
   </section>
