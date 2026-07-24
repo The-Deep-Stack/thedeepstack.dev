@@ -3,11 +3,11 @@
     <section class="hero">
       <div class="hero-copy">
         <h1>How software works beneath the surface</h1>
-        <p class="subhead">Carefully researched articles that explain system behaviour and its practical consequences.</p>
-        <p class="why-now"><strong>Why now:</strong> AI can produce code quickly. Engineers still need to understand its behaviour, verify its correctness, and diagnose failures.</p>
+        <p class="subhead">In-depth articles that explain how software systems behave and what that means in practice.</p>
+        <p class="why-now"><strong>Why now:</strong> AI can generate code quickly. Engineers still need to understand how software behaves, verify its correctness, and diagnose failures.</p>
         <div class="actions">
-          <a class="button primary" href="{{ "writing/" | relURL }}">Explore the writing</a>
-          <a class="button secondary" href="{{ "newsletter/" | relURL }}">Get publication updates</a>
+          <a class="button primary" href="{{ "writing/" | relURL }}">Explore the topics</a>
+          <a class="button secondary" href="{{ "newsletter/" | relURL }}">Email updates</a>
         </div>
       </div>
       <aside class="console" aria-label="Topics covered by The Deep Stack">
@@ -36,13 +36,13 @@
     <div class="section-grid">
       <header>
         <div class="section-kicker">How we write</div>
-        <h2>Depth without needless complexity</h2>
+        <h2>Technical depth in clear language</h2>
       </header>
       <div class="practice-grid">
-        <article class="practice"><h3>Explain the mechanism</h3><p>Go beyond the API.</p></article>
-        <article class="practice"><h3>Use evidence</h3><p>Measure, experiment, and inspect source.</p></article>
-        <article class="practice"><h3>Connect to practice</h3><p>Show why the details matter.</p></article>
-        <article class="practice"><h3>Write to last</h3><p>Build references, not news.</p></article>
+        <article class="practice"><h3>Explain the mechanism</h3><p>Show what happens beneath the interface.</p></article>
+        <article class="practice"><h3>Use evidence</h3><p>Support claims with measurements, experiments, and source code.</p></article>
+        <article class="practice"><h3>Connect to practice</h3><p>Show how system behaviour affects engineering decisions.</p></article>
+        <article class="practice"><h3>Create lasting references</h3><p>Write articles engineers can return to.</p></article>
       </div>
     </div>
   </section>
@@ -52,8 +52,7 @@
     <section class="shell section">
       <div class="section-grid">
         <header>
-          <div class="section-kicker">Latest article</div>
-          <h2>New from The Deep Stack</h2>
+          <h2 class="section-title">Latest article</h2>
         </header>
         {{ range $featured }}
         <article class="feature">
@@ -64,13 +63,13 @@
             <a class="read-link" href="{{ .RelPermalink }}">Read the article</a>
           </div>
           <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
-            <div class="panel-label">Our approach</div>
+            <div class="panel-label">Inside the article</div>
             <div class="stack-map">
-              <div class="stack-row">Measure behaviour <span>Evidence</span></div>
-              <div class="stack-row">Explain the cause <span>Model</span></div>
-              <div class="stack-row active">Apply the lesson <span>Practice</span></div>
+              <div class="stack-row">Observe the behaviour <span>Evidence</span></div>
+              <div class="stack-row">Explain the mechanism <span>Model</span></div>
+              <div class="stack-row active">Apply the finding <span>Practice</span></div>
             </div>
-            <div class="panel-label">Written for working engineers</div>
+            <div class="panel-label">Written for engineers</div>
           </div>
         </article>
         {{ end }}
