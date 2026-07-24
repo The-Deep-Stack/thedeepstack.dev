@@ -137,11 +137,21 @@ h1, h2, h3 {
 }
 .subhead {
   max-width: 560px;
-  margin: 0 0 34px;
+  margin: 0 0 20px;
   color: #bdc8cb;
   font-size: 17px;
   line-height: 1.7;
 }
+.why-now {
+  max-width: 560px;
+  margin: 0 0 30px;
+  padding-left: 15px;
+  border-left: 1px solid #526970;
+  color: #93a5aa;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.why-now strong { color: #cdd7d8; font-weight: 600; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .button {
   display: inline-flex;

@@ -1,16 +1,16 @@
 <section class="newsletter-panel" aria-labelledby="newsletter-title">
   <div>
     <div class="section-kicker signal">Email newsletter</div>
-    <h2 id="newsletter-title">Get new systems articles by email.</h2>
-    <p>Occasional articles about runtimes, databases, distributed systems, performance, and reliability. No fixed schedule and no filler.</p>
+    <h2 id="newsletter-title">Get new articles by email.</h2>
+    <p>Receive an update when The Deep Stack publishes a new article. There is no fixed schedule.</p>
   </div>
   {{ if site.Params.kitFormAction }}
     <form class="subscribe-form" action="{{ site.Params.kitFormAction }}" method="post">
       <label class="sr-only" for="newsletter-email">Email address</label>
       <input id="newsletter-email" name="email_address" type="email" autocomplete="email" placeholder="you@company.com" required>
-      <button type="submit">Subscribe →</button>
+      <button type="submit">Subscribe</button>
     </form>
   {{ else }}
-    <a class="button primary newsletter-button" href="{{ "newsletter/" | relURL }}">Get publication updates →</a>
+    <a class="button primary newsletter-button" href="{{ "newsletter/" | relURL }}">Publication updates</a>
   {{ end }}
 </section>

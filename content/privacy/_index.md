@@ -3,14 +3,14 @@ title: Privacy
 description: Privacy information for The Deep Stack.
 ---
 
-The Deep Stack aims to collect as little personal information as reasonably necessary to operate the website, respond to enquiries, and deliver communications requested by readers.
+The Deep Stack collects only the personal information needed to run the website, answer enquiries, and send requested updates.
 
 ## Current website
 
-This pre-launch website does not currently provide user accounts, accept payments, or operate an email-subscription form. If you contact The Deep Stack by email, the information you provide will be used to respond to that enquiry and manage any resulting professional relationship.
+This pre-launch website has no user accounts, payments, or email-subscription form. If you send an email, the information you provide will be used to answer your enquiry.
 
 ## Service changes
 
-If analytics, newsletter subscriptions, or payment services are enabled, this notice will be updated to identify the relevant providers, purposes, and retention practices.
+If the site adds analytics, newsletter subscriptions, or payments, this notice will name the providers, purposes, and retention practices.
 
 Privacy enquiries can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.

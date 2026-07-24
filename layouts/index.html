@@ -2,9 +2,10 @@
   <div class="shell hero-wrap">
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">An independent publication for software engineers</div>
+        <div class="eyebrow">A publication for software engineers</div>
         <h1>How software works beneath the surface.</h1>
-        <p class="subhead">The Deep Stack publishes carefully researched articles about runtimes, databases, distributed systems, and production engineering.</p>
+        <p class="subhead">Carefully researched articles that explain system behaviour and its practical consequences.</p>
+        <p class="why-now"><strong>Why now:</strong> AI can produce code quickly. Engineers still need to understand its behaviour, verify its correctness, and diagnose failures.</p>
         <div class="actions">
           <a class="button primary" href="{{ "writing/" | relURL }}">Explore the writing</a>
           <a class="button secondary" href="{{ "newsletter/" | relURL }}">Get publication updates</a>
@@ -18,19 +19,19 @@
         <div class="topic-list">
           <div>
             <span>01</span>
-            <p><strong>Runtimes &amp; languages</strong>Memory, scheduling, concurrency, compilation, and garbage collection.</p>
+            <p><strong>Runtimes</strong>Memory, scheduling, and concurrency.</p>
           </div>
           <div>
             <span>02</span>
-            <p><strong>Data systems</strong>Indexes, queries, transactions, storage, replication, and recovery.</p>
+            <p><strong>Databases</strong>Queries, transactions, and replication.</p>
           </div>
           <div>
             <span>03</span>
-            <p><strong>Distributed systems</strong>Queues, retries, consistency, coordination, state, and failure.</p>
+            <p><strong>Distributed systems</strong>Queues, consistency, and failure.</p>
           </div>
           <div>
             <span>04</span>
-            <p><strong>Production engineering</strong>Performance, reliability, observability, capacity, and cost.</p>
+            <p><strong>Production</strong>Performance, reliability, and observability.</p>
           </div>
         </div>
       </aside>
@@ -44,28 +45,29 @@
         <h2>Depth without needless complexity.</h2>
       </header>
       <div class="practice-grid">
-        <article class="practice"><span class="num">01 /</span><h3>Explain the mechanism</h3><p>Go past the API and show what the underlying system actually does.</p></article>
-        <article class="practice"><span class="num">02 /</span><h3>Use evidence</h3><p>Support claims with measurements, experiments, source code, and primary references.</p></article>
-        <article class="practice"><span class="num">03 /</span><h3>Connect to practice</h3><p>Show why the mechanism matters when designing, debugging, or operating software.</p></article>
-        <article class="practice"><span class="num">04 /</span><h3>Write to last</h3><p>Create useful technical references, not commentary built around a news cycle.</p></article>
+        <article class="practice"><span class="num">01 /</span><h3>Explain the mechanism</h3><p>Go beyond the API.</p></article>
+        <article class="practice"><span class="num">02 /</span><h3>Use evidence</h3><p>Measure, experiment, and inspect source.</p></article>
+        <article class="practice"><span class="num">03 /</span><h3>Connect to practice</h3><p>Show why the details matter.</p></article>
+        <article class="practice"><span class="num">04 /</span><h3>Write to last</h3><p>Build references, not news.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="shell section">
-    <div class="section-grid">
-      <header>
-        <div class="section-kicker">Now preparing</div>
-        <h2>The first articles are on the way.</h2>
-      </header>
-      {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
-      {{ range $featured }}
+  {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
+  {{ if gt (len $featured) 0 }}
+    <section class="shell section">
+      <div class="section-grid">
+        <header>
+          <div class="section-kicker">Latest article</div>
+          <h2>New from The Deep Stack.</h2>
+        </header>
+        {{ range $featured }}
         <article class="feature">
           <div class="feature-copy">
             <div class="meta">{{ with .Params.series }}{{ . }} · {{ end }}{{ .ReadingTime }} min read · {{ with index .Params.topics 0 }}{{ . }}{{ end }}</div>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             <p>{{ .Description }}</p>
-            <a class="read-link" href="{{ .RelPermalink }}">Read the article →</a>
+            <a class="read-link" href="{{ .RelPermalink }}">Read the article</a>
           </div>
           <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
             <div class="panel-label">Our approach</div>
@@ -77,27 +79,10 @@
             <div class="panel-label">Written for working engineers</div>
           </div>
         </article>
-      {{ else }}
-        <article class="feature">
-          <div class="feature-copy">
-            <div class="meta">Initial publishing programme</div>
-            <h3>Starting with the systems behind everyday software.</h3>
-            <p>The opening series will cover runtime behaviour, database internals, distributed workflows, and performance debugging.</p>
-            <a class="read-link" href="{{ "writing/" | relURL }}">View the initial topics →</a>
-          </div>
-          <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
-            <div class="panel-label">Our approach</div>
-            <div class="stack-map">
-              <div class="stack-row">Measure behaviour <span>Evidence</span></div>
-              <div class="stack-row">Explain the cause <span>Model</span></div>
-              <div class="stack-row active">Apply the lesson <span>Practice</span></div>
-            </div>
-            <div class="panel-label">Written for working engineers</div>
-          </div>
-        </article>
-      {{ end }}
-    </div>
-  </section>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 
   <div class="shell">{{ partial "subscribe.html" . }}</div>
 {{ end }}
