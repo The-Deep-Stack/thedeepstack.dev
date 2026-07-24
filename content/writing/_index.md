@@ -1,16 +1,18 @@
 ---
 title: Writing
-description: Carefully researched articles about the systems beneath modern software.
+description: In-depth articles about the systems beneath modern software.
 ---
 
-The Deep Stack publishes detailed articles about how software works, why it behaves as it does, and what those details mean in practice.
+The Deep Stack publishes in-depth articles about how software systems work, why they behave as they do, and what those details mean in practice.
 
-## Initial topics
+## Planned topics
 
-- Runtime behaviour: garbage collection, allocation, scheduling, JIT compilation, and concurrency.
-- Database mechanics: indexes, query planning, locking, transactions, replication, and failure recovery.
-- Distributed workflows: retries, queues, idempotency, state transitions, consistency, and invariant design.
-- Performance engineering: measurement, profiling, benchmarking, load generation, capacity, and cost.
-- Reliability: degradation, overload, observability, incident analysis, and operational feedback.
+- Programming languages and runtimes: compilers, interpreters, JITs, memory allocation, garbage collection, and concurrency.
+- Hardware and operating systems: processors, caches, virtual memory, scheduling, filesystems, and storage.
+- Networking: protocols, connections, congestion, latency, load balancing, and failure.
+- Databases and storage: indexes, query planning, locking, transactions, replication, and recovery.
+- Distributed systems: queues, retries, idempotency, coordination, consistency, and invariants.
+- Production engineering: profiling, benchmarking, load testing, capacity, observability, and cloud cost.
+- Reliability, security, and correctness: overload, failure containment, incident analysis, threat modelling, and critical workflow design.
 
-Articles draw on measurements, experiments, source code, documentation, and research to create technical references that remain useful.
+Articles support their claims with measurements, experiments, source code, documentation, and research. The aim is to publish references engineers can return to.

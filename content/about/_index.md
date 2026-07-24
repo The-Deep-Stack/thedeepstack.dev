@@ -1,10 +1,12 @@
 ---
 title: About
-description: The Deep Stack is an independent publication about the systems beneath modern software.
+description: An independent publication about how software works beneath the surface.
 ---
 
-It covers runtimes, databases, distributed systems, performance, and reliability. Articles explain what these systems do, why they behave that way, and what engineers can learn from them.
+The Deep Stack publishes in-depth articles about the systems beneath modern software: runtimes, databases, distributed systems, performance, and reliability.
 
-AI can produce code quickly. Engineers still need to understand its behaviour, verify its correctness, and diagnose failures. Knowledge of the underlying systems helps them do that work.
+Each article explains how a system behaves, why it behaves that way, and what those details mean for engineers.
 
-Claims are supported with measurements, experiments, source code, documentation, and research.
+AI can generate code quickly. Engineers still need to understand how software behaves, verify its correctness, and diagnose failures. Knowledge of the underlying systems helps them do that work.
+
+Articles support their claims with measurements, experiments, source code, documentation, and research.
