@@ -1,10 +1,10 @@
 ---
-title: Publication updates
-description: Get notified when The Deep Stack publishes a new article.
+title: Email updates
+description: Know when The Deep Stack publishes a new article.
 ---
 
 ## Subscriptions opening soon
 
-The list is not open yet. Messages will be occasional and limited to new work. Articles will remain on this website, and each email will link to the original publication.
+The email list is not open yet. When it opens, messages will be occasional and limited to new articles. Every email will link to the original article on this website.
 
-Until then, questions can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.
+Questions about the publication can be sent to **[rohit@thedeepstack.dev](mailto:rohit@thedeepstack.dev)**.

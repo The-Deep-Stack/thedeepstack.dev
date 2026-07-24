@@ -35,7 +35,7 @@ caches:
 params:
   description: Carefully researched writing about runtimes, databases, distributed systems, and production engineering.
   author: Rohit Jha
-  contactEmail: hello@thedeepstack.dev
+  contactEmail: rohit@thedeepstack.dev
   kitFormAction: ""
   mainSections:
     - writing
