@@ -1,0 +1,28 @@
+# {{ site.Title }}
+
+> An independent publication with in-depth articles about how software works beneath the surface.
+
+The Deep Stack covers programming languages, runtimes, hardware, operating systems,
+networking, databases, distributed systems, production engineering, reliability,
+security, and correctness. Articles explain system behaviour, support claims with
+evidence, and connect technical details to engineering decisions.
+
+## Main
+
+- [Writing]({{ "writing/" | absURL }}): Planned topics and published articles.
+- [About]({{ "about/" | absURL }}): The publication's purpose and editorial approach.
+- [Email updates]({{ "newsletter/" | absURL }}): Subscription status and publication updates.
+{{ with where site.RegularPages "Section" "writing" }}
+
+## Articles
+{{ range . }}
+
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{ end }}
+{{ end }}
+
+## Optional
+
+- [Privacy]({{ "privacy/" | absURL }}): How visitor and correspondence information is handled.
+- [Terms]({{ "terms/" | absURL }}): Terms for using the website and its content.
+- [RSS feed]({{ "index.xml" | absURL }}): Machine-readable publication feed.

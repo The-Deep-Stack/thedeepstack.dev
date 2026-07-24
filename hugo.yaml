@@ -13,6 +13,14 @@ outputs:
   home:
     - HTML
     - RSS
+    - LLMS
+
+outputFormats:
+  LLMS:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
 
 pagination:
   pagerSize: 8
