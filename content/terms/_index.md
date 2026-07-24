@@ -3,10 +3,10 @@ title: Terms
 description: Terms for using The Deep Stack website.
 ---
 
-Content published by The Deep Stack is provided for educational and informational purposes. Software behaviour depends on implementation details, versions, workloads, configuration, infrastructure, and operating conditions; nothing on this website guarantees the behaviour of a particular production system.
+The Deep Stack publishes educational and informational content. Software behaviour depends on versions, workloads, configuration, infrastructure, and other implementation details. The website does not guarantee how a particular production system will behave.
 
-You remain responsible for evaluating technical information before applying it to a system under your control.
+Evaluate technical information before applying it to a system you control.
 
-Unless stated otherwise, website content may not be republished commercially or presented as another person’s work. Short quotations and links are welcome with appropriate attribution.
+Unless stated otherwise, content may not be republished commercially or presented as another person's work. Short quotations and links are welcome with attribution.
 
 Questions can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.

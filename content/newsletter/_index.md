@@ -3,12 +3,8 @@ title: Publication updates
 description: Get notified when The Deep Stack publishes a new article.
 ---
 
-The email list will announce new articles from The Deep Stack.
+## Subscriptions opening soon
 
-Expect occasional updates about runtimes, databases, distributed systems, performance, and reliability. There will be no fixed schedule and no filler.
-
-## Email list opening soon
-
-Email subscriptions are not open yet. When they open, every article will remain available on this website. Emails will link back to the original article rather than duplicate it on another platform.
+The list is not open yet. Messages will be occasional and limited to new work. Articles will remain on this website, and each email will link to the original publication.
 
 Until then, questions can be sent to **[hello@thedeepstack.dev](mailto:hello@thedeepstack.dev)**.

@@ -4,8 +4,8 @@
       <div class="hero-copy">
         <div class="eyebrow">A publication for software engineers</div>
         <h1>How software works beneath the surface.</h1>
-        <p class="subhead">Carefully researched articles about runtimes, databases, distributed systems, performance, and reliability.</p>
-        <p class="why-now"><strong>Why now:</strong> AI can generate more software, faster. Engineers remain responsible for understanding how it behaves, verifying that it is correct, and fixing it when it fails.</p>
+        <p class="subhead">Carefully researched articles that explain system behaviour and its practical consequences.</p>
+        <p class="why-now"><strong>Why now:</strong> AI can produce code quickly. Engineers still need to understand its behaviour, verify its correctness, and diagnose failures.</p>
         <div class="actions">
           <a class="button primary" href="{{ "writing/" | relURL }}">Explore the writing</a>
           <a class="button secondary" href="{{ "newsletter/" | relURL }}">Get publication updates</a>
@@ -53,20 +53,21 @@
     </div>
   </section>
 
-  <section class="shell section">
-    <div class="section-grid">
-      <header>
-        <div class="section-kicker">Now preparing</div>
-        <h2>The first articles are on the way.</h2>
-      </header>
-      {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
-      {{ range $featured }}
+  {{ $featured := where site.RegularPages "Section" "writing" | first 1 }}
+  {{ if gt (len $featured) 0 }}
+    <section class="shell section">
+      <div class="section-grid">
+        <header>
+          <div class="section-kicker">Latest article</div>
+          <h2>New from The Deep Stack.</h2>
+        </header>
+        {{ range $featured }}
         <article class="feature">
           <div class="feature-copy">
             <div class="meta">{{ with .Params.series }}{{ . }} · {{ end }}{{ .ReadingTime }} min read · {{ with index .Params.topics 0 }}{{ . }}{{ end }}</div>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             <p>{{ .Description }}</p>
-            <a class="read-link" href="{{ .RelPermalink }}">Read the article →</a>
+            <a class="read-link" href="{{ .RelPermalink }}">Read the article</a>
           </div>
           <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
             <div class="panel-label">Our approach</div>
@@ -78,27 +79,10 @@
             <div class="panel-label">Written for working engineers</div>
           </div>
         </article>
-      {{ else }}
-        <article class="feature">
-          <div class="feature-copy">
-            <div class="meta">Initial publishing programme</div>
-            <h3>Starting with the systems behind everyday software.</h3>
-            <p>The opening series will cover runtime behaviour, database internals, distributed workflows, and performance debugging.</p>
-            <a class="read-link" href="{{ "writing/" | relURL }}">View the initial topics →</a>
-          </div>
-          <div class="feature-panel" aria-label="How The Deep Stack approaches an article">
-            <div class="panel-label">Our approach</div>
-            <div class="stack-map">
-              <div class="stack-row">Measure behaviour <span>Evidence</span></div>
-              <div class="stack-row">Explain the cause <span>Model</span></div>
-              <div class="stack-row active">Apply the lesson <span>Practice</span></div>
-            </div>
-            <div class="panel-label">Written for working engineers</div>
-          </div>
-        </article>
-      {{ end }}
-    </div>
-  </section>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 
   <div class="shell">{{ partial "subscribe.html" . }}</div>
 {{ end }}
