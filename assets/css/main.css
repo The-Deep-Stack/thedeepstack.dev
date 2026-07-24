@@ -3,7 +3,7 @@
   --paper-deep: #e8e3d8;
   --white: #fbfaf6;
   --ink: #14202a;
-  --muted: #667279;
+  --muted: #536169;
   --navy: #10232d;
   --navy-2: #172f39;
   --line: #c9c4b8;
@@ -237,7 +237,7 @@ h1, h2, h3 {
 }
 .section { padding-block: 66px; border-top: 1px solid var(--line); }
 .section-grid { display: grid; grid-template-columns: 280px 1fr; gap: 72px; }
-.section-kicker { color: #7d7162; font-size: 10px; font-weight: 700; }
+.section-kicker { color: #655a4d; font-size: 10px; font-weight: 700; }
 .section h2, .page-hero h1 {
   margin: 14px 0 0;
   font-size: clamp(2.3rem, 3.3vw, 2.75rem);
