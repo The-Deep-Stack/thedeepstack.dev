@@ -63,7 +63,6 @@ jobs:
       - name: Build
         run: |
           hugo --gc --minify --panicOnWarning \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Save Hugo cache
@@ -87,4 +86,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-
